@@ -1,1 +1,1 @@
-# Computer-Science-Tasks
+# Computer Science Tasks project
