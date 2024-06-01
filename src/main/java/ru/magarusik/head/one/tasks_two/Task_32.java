@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_32 {
     /*
     Преобразование цветов. Для представления цвета используются несколько
@@ -20,10 +22,10 @@ public class Task_32 {
     k = 1 - w
      */
     public static void main(String[] args) {
-        int r = Integer.parseInt(args[0]);
-        int g = Integer.parseInt(args[1]);
-        int b = Integer.parseInt(args[2]);
-        double w = 0, c = 0, m = 0, y = 0, k = 1;
+        int r = Utils.SCANNER.nextInt();
+        int g = Utils.SCANNER.nextInt();
+        int b = Utils.SCANNER.nextInt();
+        double w, c = 0, m = 0, y = 0, k = 1;
         if (r != 0 && g != 0 && b != 0) {
             w = Math.max(r / 255.0, Math.max(g / 255.0, b / 255.0));
             c = (w - (r / 255.0)) / w;

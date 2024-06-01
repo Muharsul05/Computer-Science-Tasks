@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task8 {
     /*
     Перепишите программу TenHellos и создайте программу Hellos, которая получает
@@ -9,7 +11,7 @@ public class Task8 {
     использоваться при выводе i-ro сообщения "Hello".
      */
     public static void main(String[] args) {
-        int n = (Integer.parseInt(args[0])) % 1000;
+        int n = (Utils.SCANNER.nextInt()) % 1000;
         for (int i = 1; i <= n; i++) {
             if (i == 11 || i == 12 || i == 13) {
                 System.out.println(i + "th Hello");

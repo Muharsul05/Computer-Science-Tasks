@@ -18,6 +18,7 @@ public class Task5 {
             case 4 -> System.out.println("4");
             case 5 -> System.out.println("5");
             case 6, 7, 8 -> System.out.println("6");
+            default -> System.out.println("Error");
         }
     }
 }

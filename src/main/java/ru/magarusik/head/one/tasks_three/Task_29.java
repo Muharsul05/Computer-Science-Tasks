@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_29 {
     /*
     Напишите программу Checkerboard, которая получает целое число n как
@@ -8,8 +10,8 @@ public class Task_29 {
      */
 
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
-        String board = "+"+ "-".repeat(n) + "+";
+        int n = Utils.SCANNER.nextInt();
+        String board = "+" + "-".repeat(n) + "+";
         System.out.println(board);
         for (int i = 0; i < n; i++) {
             System.out.print("|");

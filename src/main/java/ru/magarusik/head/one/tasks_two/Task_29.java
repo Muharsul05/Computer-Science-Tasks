@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_29 {
     /*
     День недели. Напишите программу, которая получает дату и выводит день
@@ -16,9 +18,9 @@ public class Task_29 {
      */
 
     public static void main(String[] args) {
-        int day = Integer.parseInt(args[0]);
-        int month = Integer.parseInt(args[1]);
-        int year = Integer.parseInt(args[2]);
+        int day = Utils.SCANNER.nextInt();
+        int month = Utils.SCANNER.nextInt();
+        int year = Utils.SCANNER.nextInt();
 
         int y0 = year - (14 - month) / 12;
         int x = y0 + y0 / 4 - y0 / 100 + y0 / 400;

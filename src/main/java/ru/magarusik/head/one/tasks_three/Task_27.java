@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_27 {
     /*
     Внесите изменения в программу Factors, чтобы каждый простой множитель
@@ -7,7 +9,7 @@ public class Task_27 {
      */
 
     public static void main(String[] args) {
-        long n = Long.parseLong(args[0]);
+        long n = Utils.SCANNER.nextLong();
         for (long factor = 2; factor <= n / factor; factor++) {
             boolean isFirst = true;
             while (n % factor == 0) {

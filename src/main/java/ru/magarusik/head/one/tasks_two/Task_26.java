@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_26 {
     /*
     Полярные координаты. Напишите программу, которая преобразует
@@ -10,8 +12,8 @@ public class Task_26 {
      */
 
     public static void main(String[] args) {
-        double x = Double.parseDouble(args[0]);
-        double y = Double.parseDouble(args[1]);
+        double x = Utils.SCANNER.nextDouble();
+        double y = Utils.SCANNER.nextDouble();
         double r = Math.sqrt(x * x + y * y);
         double angle = x != 0 ? Math.atan2(y, x) : Math.PI / 2 * (y > 0 ? 1 : -1);
 

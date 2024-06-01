@@ -10,11 +10,11 @@ public class Task_12 {
         int n = 16;
         for (int i = 0; i < 10; i++, n *= 2) {
             System.out.println(n +
-                    "\t" + Math.log(n) +
-                    "\t" + n * Math.log(n) +
-                    "\t" + Math.pow(n, 2) +
-                    "\t" + Math.pow(n, 3) +
-                    "\t" + Math.pow(2, n));
+                               "\t" + Math.log(n) +
+                               "\t" + n * Math.log(n) +
+                               "\t" + Math.pow(n, 2) +
+                               "\t" + Math.pow(n, 3) +
+                               "\t" + Math.pow(2, n));
         }
     }
 }

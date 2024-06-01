@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_10 {
     /*
     Напишите программу, которая получает целое число n как аргумент командной строки,
@@ -7,7 +9,7 @@ public class Task_10 {
     в интервале от 0 до 1, после чего выводит их среднее значение (см. упражнение 1.2.30).
      */
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
+        int n = Utils.SCANNER.nextInt();
         double sum = 0;
         double max = Double.MIN_VALUE;
         double min = Double.MAX_VALUE;

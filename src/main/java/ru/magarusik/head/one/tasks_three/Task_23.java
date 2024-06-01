@@ -1,15 +1,16 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_23 {
     /*
-    Напишите версию программы Gambler, использующую два вложенных цикла
-    while или два вложенных цикла for (вместо цикла while в цикле for).
+    Напишите версию программы Gambler, использующую два вложенных цикла while или два вложенных цикла for (вместо цикла while в цикле for).
      */
 
     public static void main(String[] args) {
-        int stake = Integer.parseInt(args[0]);
-        int goal = Integer.parseInt(args[1]);
-        int trails = Integer.parseInt(args[2]);
+        int stake = Utils.SCANNER.nextInt();
+        int goal = Utils.SCANNER.nextInt();
+        int trails = Utils.SCANNER.nextInt();
 
         int bets = 0;
         int wins = 0;

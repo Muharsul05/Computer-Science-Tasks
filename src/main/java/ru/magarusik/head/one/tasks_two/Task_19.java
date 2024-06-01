@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 import java.util.Random;
 
 public class Task_19 {
@@ -9,8 +11,8 @@ public class Task_19 {
     включительно.
      */
     public static void main(String[] args) {
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
+        int a = Utils.SCANNER.nextInt();
+        int b = Utils.SCANNER.nextInt();
         var random = new Random();
         System.out.println(random.nextInt(a, b));
     }

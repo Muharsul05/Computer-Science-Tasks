@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_33 {
     /*
     Дуга большого круга. Напишите программу GreatCircle, которая получает
@@ -17,12 +19,12 @@ public class Task_33 {
     круга между Парижем (48,87° N и -2,33° W ) и Сан-Франциско (37,8° N и 122,4° W).
      */
     public static void main(String[] args) {
-        double x1 = Math.toRadians(Double.parseDouble(args[0]));
-        double y1 = Math.toRadians(Double.parseDouble(args[1]));
-        double x2 = Math.toRadians(Double.parseDouble(args[2]));
-        double y2 = Math.toRadians(Double.parseDouble(args[3]));
+        double x1 = Math.toRadians(Utils.SCANNER.nextDouble());
+        double y1 = Math.toRadians(Utils.SCANNER.nextDouble());
+        double x2 = Math.toRadians(Utils.SCANNER.nextDouble());
+        double y2 = Math.toRadians(Utils.SCANNER.nextDouble());
         double d = 60 * Math.acos(Math.sin(x1) * Math.sin(x2) +
-                Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
+                                  Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
         System.out.println(d);
     }
 }

@@ -1,8 +1,12 @@
 package ru.magarusik.head.one.tasks_three;
 
-import java.util.HashMap;
+import ru.magarusik.head.Utils;
+
+import java.util.EnumMap;
 import java.util.Map;
 import java.util.Random;
+
+import static ru.magarusik.head.one.tasks_three.Direction.*;
 
 public class Task_37 {
     /*
@@ -15,14 +19,14 @@ public class Task_37 {
      */
 
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
+        int n = Utils.SCANNER.nextInt();
         int x = 0;
         int y = 0;
-        var map = new HashMap<>(Map.of(
-                "Север", 0,
-                "Юг", 0,
-                "Восток", 0,
-                "Запад", 0
+        var map = new EnumMap<>(Map.of(
+                NORTH, 0,
+                SOUTH, 0,
+                EAST, 0,
+                WEST, 0
         ));
         var random = new Random();
 
@@ -31,19 +35,19 @@ public class Task_37 {
             switch (randoNumber) {
                 case 0 -> {
                     y++;
-                    map.put("Север", map.get("Север") + 1);
+                    map.put(NORTH, map.get(NORTH) + 1);
                 }
                 case 1 -> {
                     y--;
-                    map.put("Юг", map.get("Юг") + 1);
+                    map.put(SOUTH, map.get(SOUTH) + 1);
                 }
                 case 2 -> {
                     x++;
-                    map.put("Восток", map.get("Восток") + 1);
+                    map.put(EAST, map.get(EAST) + 1);
                 }
                 case 3 -> {
                     x--;
-                    map.put("Запад", map.get("Запад") + 1);
+                    map.put(WEST, map.get(WEST) + 1);
                 }
                 default -> throw new IllegalStateException("Unexpected value: " + randoNumber);
             }
@@ -53,4 +57,11 @@ public class Task_37 {
                 .reduce(0, Integer::sum));
         System.out.println("Статистика: " + map);
     }
+}
+
+enum Direction {
+    NORTH,
+    SOUTH,
+    EAST,
+    WEST
 }

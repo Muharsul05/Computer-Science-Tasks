@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_25 {
     /*
     Охлаждение под действием ветра. Для заданной температуры Т (по шкале
@@ -17,8 +19,8 @@ public class Task_25 {
      */
 
     public static void main(String[] args) {
-        double temperature = Double.parseDouble(args[0]);
-        double velocity = Double.parseDouble(args[1]);
+        double temperature = Utils.SCANNER.nextDouble();
+        double velocity = Utils.SCANNER.nextDouble();
 
         System.out.println(35.74 + 0.6215 * temperature + (0.4275 * temperature - 35.75) * Math.pow(velocity, 0.16));
     }

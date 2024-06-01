@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_30 {
     /*
     Напишите программу GreatestCommonDivisor для нахождения наибольшего общего
@@ -9,8 +11,8 @@ public class Task_30 {
      */
 
     public static void main(String[] args) {
-        int x = Integer.parseInt(args[0]);
-        int y = Integer.parseInt(args[1]);
+        int x = Utils.SCANNER.nextInt();
+        int y = Utils.SCANNER.nextInt();
         System.out.println(greatestCommonDivisor(x, y));
     }
 

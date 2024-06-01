@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_22 {
     /*
     Напишите фрагмент кода, который переводит двоичное представление
@@ -7,7 +9,7 @@ public class Task_22 {
      */
 
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
+        int n = Utils.SCANNER.nextInt();
         String s = Integer.toBinaryString(n);
         System.out.println(s);
     }

@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_18 {
     /*
     Напишите программу, которая получает два числа с плавающей точкой х и у
@@ -7,8 +9,8 @@ public class Task_18 {
     до точки (0,0).
      */
     public static void main(String[] args) {
-        double x = Double.parseDouble(args[0]);
-        double y = Double.parseDouble(args[1]);
+        double y = Utils.SCANNER.nextDouble();
+        double x = Utils.SCANNER.nextDouble();
         System.out.println(Math.sqrt(x * x + y * y));
     }
 }

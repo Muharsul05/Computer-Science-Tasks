@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_31 {
     /*
     Проекция Меркатора. Проекция Меркатора представляет собой равноугольную
@@ -14,10 +16,10 @@ public class Task_31 {
         а также широту и долготу точки и выводит проекцию точки.
      */
     public static void main(String[] args) {
-        double l0 = Double.parseDouble(args[0]);
-        double phi = Double.parseDouble(args[1]);
-        double l = Double.parseDouble(args[2]);
-        double x =  l - l0;
+        double l0 = Utils.SCANNER.nextDouble();
+        double phi = Utils.SCANNER.nextDouble();
+        double l = Utils.SCANNER.nextDouble();
+        double x = l - l0;
         double y = 0.5 * Math.log((1 + Math.sin(phi)) / (1 - Math.sin(phi)));
         System.out.println(x);
         System.out.println(y);

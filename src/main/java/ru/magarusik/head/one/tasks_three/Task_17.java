@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_17 {
     /*
     Доработайте свое решение упражнения 1.2.24, чтобы программа выводила
@@ -8,9 +10,9 @@ public class Task_17 {
      */
 
     public static void main(String[] args) {
-        double P = Double.parseDouble(args[0]);
-        double r = Double.parseDouble(args[1]) / 12;
-        double t = Double.parseDouble(args[2]);
+        double P = Utils.SCANNER.nextDouble();
+        double r = Utils.SCANNER.nextDouble();
+        double t = Utils.SCANNER.nextDouble();
         for (int i = 1; i <= t; i++) {
             var temp = P;
             P += P * r;

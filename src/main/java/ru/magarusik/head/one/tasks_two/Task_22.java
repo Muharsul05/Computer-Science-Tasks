@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_two;
 
+import ru.magarusik.head.Utils;
+
 public class Task_22 {
     /*
     Напишите программу, которая получает числа типа double х0, v0 и t
@@ -9,9 +11,9 @@ public class Task_22 {
     из исходной позиции х0 со скоростью v0 метров в секунду.)
      */
     public static void main(String[] args) {
-        double x0 = Double.parseDouble(args[0]);
-        double v0 = Double.parseDouble(args[1]);
-        double t = Double.parseDouble(args[2]);
+        double x0 = Utils.SCANNER.nextDouble();
+        double v0 = Utils.SCANNER.nextDouble();
+        double t = Utils.SCANNER.nextDouble();
         double g = 9.80665;
         System.out.println(x0 + v0 - g * Math.pow(t, 2) / 2);
     }

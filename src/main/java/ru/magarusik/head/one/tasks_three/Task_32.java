@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_32 {
     /*
     Напишите программу PowersOfК, которая получает целое число k как аргумент командной строки
@@ -8,7 +10,7 @@ public class Task_32 {
      */
 
     public static void main(String[] args) {
-        int k = Integer.parseInt(args[0]);
+        int k = Utils.SCANNER.nextInt();
         for (long i = 0; i < Long.MAX_VALUE; i++) {
             var pow = Math.pow(i, k);
             if (pow > Long.MAX_VALUE) {

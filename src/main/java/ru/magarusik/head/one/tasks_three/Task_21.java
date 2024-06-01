@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_21 {
     /*
     На основе программы Binary создайте программу Kary, которая получает
@@ -11,8 +13,8 @@ public class Task_21 {
      */
 
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
-        int k = Integer.parseInt(args[1]);
+        int n = Utils.SCANNER.nextInt();
+        int k = Utils.SCANNER.nextInt();
         StringBuilder result = new StringBuilder();
         while (n > 0) {
             result.append(switch (n % k) {

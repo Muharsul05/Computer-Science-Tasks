@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_31 {
     /*
     Напишите программу RelativelyPrime, которая получает целое число n
@@ -9,7 +11,7 @@ public class Task_31 {
      */
 
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
+        int n = Utils.SCANNER.nextInt();
         for (int i = 1; i <= n; i++) {
             System.out.print(i + ":\t|");
             for (int j = 1; j <= n; j++) {

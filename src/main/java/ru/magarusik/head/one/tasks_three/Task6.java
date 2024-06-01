@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task6 {
     /*
      Усовершенствуйте свое решение упражнения 1.2.25: добавьте код, который
@@ -8,8 +10,8 @@ public class Task6 {
      при нарушении ограничений.
      */
     public static void main(String[] args) {
-        double temperature = Double.parseDouble(args[0]);
-        double velocity = Double.parseDouble(args[1]);
+        double temperature = Utils.SCANNER.nextDouble();
+        double velocity = Utils.SCANNER.nextDouble();
 
         if (temperature > 50 || velocity > 120 || velocity < 3) {
             System.out.println("Введены некоректные данные!");

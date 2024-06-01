@@ -18,18 +18,11 @@ public class Task_35 {
      */
     public static void main(String[] args) {
         String dragon = "F";
-        System.out.println("0: " + dragon);
-        dragon = dragon + "L" + dragon;
-        System.out.println("1: " + dragon);
-        dragon = dragon + "L" + inverse(dragon);
-        System.out.println("2: " + dragon);
-        dragon = dragon + "L" + inverse(dragon);
-        System.out.println("3: " + dragon);
-        dragon = dragon + "L" + inverse(dragon);
-        System.out.println("4: " + dragon);
-        dragon = dragon + "L" + inverse(dragon);
-        System.out.println("5: " + dragon);
-
+        System.out.println();
+        for (int i = 0; i <= 5; i++) {
+            System.out.println((i + 1) + ": " + dragon);
+            dragon = dragon + "L" + inverse(dragon);
+        }
     }
 
     public static String inverse(String dragon) {

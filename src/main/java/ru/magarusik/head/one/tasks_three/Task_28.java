@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_28 {
     /*
     Экспериментальным путем определите, как влияет использование в программе Factors
@@ -9,7 +11,7 @@ public class Task_28 {
      */
 
     public static void main(String[] args) {
-        long n = Long.parseLong(args[0]);
+        long n = Utils.SCANNER.nextLong();
         for (long factor = 2; factor < n; factor++) {
             boolean isFirst = true;
             while (n % factor == 0) {

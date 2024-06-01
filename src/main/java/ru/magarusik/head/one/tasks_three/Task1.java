@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task1 {
     /*
     Напишите программу, которая получает три целых числа как аргументы
@@ -7,9 +9,9 @@ public class Task1 {
     или "not equal" в противном случае.
      */
     public static void main(String[] args) {
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
-        int c = Integer.parseInt(args[2]);
+        int a = Utils.SCANNER.nextInt();
+        int b = Utils.SCANNER.nextInt();
+        int c = Utils.SCANNER.nextInt();
         if (a == b && b == c) {
             System.out.println("equal");
         } else {

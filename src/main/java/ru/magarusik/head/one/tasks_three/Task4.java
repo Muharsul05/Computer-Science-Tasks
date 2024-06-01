@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task4 {
     /*
     Напишите фрагмент кода, который выводит сообщение "true", если
@@ -7,8 +9,8 @@ public class Task4 {
     или "false" в противном случае.
      */
     public static void main(String[] args) {
-        double x = Double.parseDouble(args[0]);
-        double y = Double.parseDouble(args[1]);
+        double x = Utils.SCANNER.nextDouble();
+        double y = Utils.SCANNER.nextDouble();
         System.out.println(x >= 0.0 && x <= 1.0 && y >= 0.0 && y <= 1.0);
     }
 }

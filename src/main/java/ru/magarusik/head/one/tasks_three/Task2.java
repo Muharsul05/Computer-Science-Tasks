@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task2 {
     /*
     Напишите более универсальную и надежную версию программы Quadratic (листинг 1.2.3),
@@ -8,9 +10,9 @@ public class Task2 {
     а равно нулю.
      */
     public static void main(String[] args) {
-        double a = Double.parseDouble(args[0]);
-        double b = Double.parseDouble(args[1]);
-        double c = Double.parseDouble(args[2]);
+        double a = Utils.SCANNER.nextInt();
+        double b = Utils.SCANNER.nextInt();
+        double c = Utils.SCANNER.nextInt();
 
         if (a != 0) {
             double d = Math.pow(b, 2) - 4 * a * c;

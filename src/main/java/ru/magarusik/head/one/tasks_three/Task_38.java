@@ -1,5 +1,7 @@
 package ru.magarusik.head.one.tasks_three;
 
+import ru.magarusik.head.Utils;
+
 public class Task_38 {
     /*
     Экспоненциальная функция. Пусть х — положительная переменная типа double.
@@ -8,7 +10,7 @@ public class Task_38 {
      */
 
     public static void main(String[] args) {
-        double x = Double.parseDouble(args[0]);
+        double x = Utils.SCANNER.nextDouble();
 
         System.out.println("e ^ " + x + " = " + exp(x));
         System.out.println("Math.exp(" + x + ") = " + Math.exp(x));
@@ -20,7 +22,7 @@ public class Task_38 {
         double powX = x;
         for (int i = 2; i <= 200; i++) {
             if (factorial * i == Double.POSITIVE_INFINITY ||
-                    powX * x == Double.POSITIVE_INFINITY) {
+                powX * x == Double.POSITIVE_INFINITY) {
                 break;
             }
             factorial *= i;
