@@ -19,10 +19,11 @@ public class Task_34 {
             for (int j = 1; j < n; j++) {
                 for (int k = 0; k < n; k++) {
                     for (int l = 0; l < n; l++) {
-                        if (Math.pow(i, 3) + Math.pow(j, 3) == Math.pow(k, 3) + Math.pow(l, 3)
-                                && i != j && i != k && i != l
-                                && j != k && j !=l && k != l ) {
-                            System.out.println(Math.pow(i, 3) + Math.pow(j, 3));
+                        double pow = Math.pow(i, 3) + Math.pow(j, 3);
+                        if (pow == Math.pow(k, 3) + Math.pow(l, 3)
+                            && i != j && i != k && i != l
+                            && j != k && j != l && k != l) {
+                            System.out.println(pow);
                             System.out.println(i + " " + j + " " + k + " " + l);
                         }
                     }

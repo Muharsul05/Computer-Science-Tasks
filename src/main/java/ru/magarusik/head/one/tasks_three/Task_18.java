@@ -20,18 +20,6 @@ public class Task_18 {
         int n = 1_000_000_000;
         double sum = 0;
 
-//        for (int i = 1; i <= n; i++) sum += 1 / (i * i);
-//        System.out.println(sum);
-//        sum = 0;
-//
-//        for (int i = 1; i <= n; i++) sum += 1.0 / i * i;
-//        System.out.println(sum);
-//        sum = 0;
-
-//        for (int i = 1; i <= n; i++) sum += 1.0 / (i * i);
-//        System.out.println(sum);
-//        sum = 0;
-
         for (int i = 1; i <= n; i++) sum += 1 / (1.0 * i * i);
         System.out.println(sum);
 
